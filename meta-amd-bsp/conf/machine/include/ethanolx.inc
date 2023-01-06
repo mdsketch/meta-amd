@@ -1,4 +1,4 @@
-require conf/machine/include/x86-base.inc
+require conf/machine/include/x86/x86-base.inc
 
 # Setup a getty on all serial ports
 SERIAL_CONSOLES = "115200;ttyS0"
