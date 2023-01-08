@@ -55,25 +55,20 @@ EXTRA_IMAGE_FEATURES:append = " tools-profile"
 PREFERRED_PROVIDER_virtual/kernel = "linux-yocto-rt"
 ```
 
-In case the user does not have a dGPU, and wants to interact with the
-machine over the RS232 serial interface, the user needs to have an
-`LPC to UART Adapter` module plugged into the LPC header on the
-motherboard.
+If you use the iso image, you can choose to `boot` from iso directly, or
+to `install` the system to existing hard drive.
 
-Using a serial cable connected between the host machine's RS232 port
-and this module, the user will be able to interact with the machine
-using the serial interface, but will still not be able to install the
-OS to a harddrive using the serial interface. For that, the graphical
-console has to be disabled. In order to achieve that, add the
-following to the `local.conf` and rebuild an image.
+By default, the user interactive console is the serial port.
 
-```sh
-MACHINE_FEATURES:remove = "screen-console"
+To install from vga console, edit the platform config file of you machine
+`meta-amd-bsp/conf/machine/include/<platform>.inc`
+and set tty0 as the last console option of the `APPEND` variable.
+
+Example:
 ```
-
-The resulting image will have no graphical console support and will
-only have the serial console support. After this, the user will also
-be able to install the OS to a harddrive using the serial interface.
+Set `APPEND += "console=tty0 console=ttyS0,115200n8"` to install from serial console.
+Set `APPEND += "console=ttyS0,115200n8 console=tty0"` to install from vga console.
+```
 
 ---
 #### What's next
