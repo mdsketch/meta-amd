@@ -10,7 +10,7 @@ hashes, software versions, and known/fixed issues/limitations.
 | poky              | git://git.yoctoproject.org/poky              | kirkstone | tags/yocto-4.0.5                         |
 | meta-openembedded | git://git.openembedded.org/meta-openembedded | kirkstone | 50d4a8d2a983a68383ef1ffec2c8e21adf0c1a79 |
 | meta-dpdk         | git://git.yoctoproject.org/meta-dpdk         | kirkstone | 0e62d02f2755fbbf7dfa6e243381377c0a1cd97c |
-| meta-amd          | git://git.yoctoproject.org/meta-amd          | kirkstone | tags/kirkstone-genoa-ga-202212           |
+| meta-amd          | git://git.yoctoproject.org/meta-amd          | kirkstone | tags/kirkstone-e3000-ga-202301           |
 
 ## Software versions
 | Software        | Version  |
