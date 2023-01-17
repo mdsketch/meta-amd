@@ -48,7 +48,7 @@ git checkout --quiet 50d4a8d2a983a68383ef1ffec2c8e21adf0c1a79
 cd ../meta-dpdk
 git checkout --quiet 0e62d02f2755fbbf7dfa6e243381377c0a1cd97c
 cd ../meta-amd
-git checkout --quiet tags/kirkstone-genoa-ga-202212
+git checkout --quiet tags/kirkstone-e3000-ga-202301
 cd ..
 ```
 
