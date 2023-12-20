@@ -122,9 +122,9 @@ KERNEL_DEVICETREE:qemuarmv5 = "versatile-pb.dtb"
 #COMPATIBLE_MACHINE = "^(qemuarm|qemuarmv5|qemuarm64|qemux86|qemuppc|qemuppc64|qemumips|qemumips64|qemux86-64|qemuriscv64|qemuriscv32)$"
 KBRANCH = "linux-6.6.y"
 
-SRCREV_machine = "bd3a9e5771a8b332f466d06f7c130a69cab0d526"
+SRCREV_machine = "ac25535242acb0d0042b920e5232b10e76ad169b"
 
-LINUX_VERSION = "6.6.4"
+LINUX_VERSION = "6.6.7"
 
 
 KMACHINE = "common-pc-64"
