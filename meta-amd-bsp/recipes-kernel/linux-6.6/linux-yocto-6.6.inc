@@ -108,7 +108,7 @@ FILESOVERRIDES:append := ":${@bb.parse.vars_from_file(d.getVar('FILE', False),d)
 
 KERNELURI ?= "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;protocol=https;name=machine;branch=linux-6.6.y"
 YOCTO_META ?= "git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-6.5;destsuffix=yocto-kmeta"
-SRC_URI = "${KERNELURI};${SRCBRANCHARG} ${YOCTO_META} file://ntb.cfg file://pingpong.cfg file://ntb_netdev.cfg file://ntb_tool.cfg file://ntb_perf.cfg file://NVME-Core.cfg file://dmatest.cfg file://nvme.cfg file://ntbtool.cfg file://0002-net-phy-aquantia-Add-10mbps-support.patch file://0009-net-phy-Broadcom-Added-support-for-BCM84892-PHY-devi.patch file://0011-amd-xgbe-need-to-check-KR-training-before-restart-CL.patch file://0012-amd-xgbe-Custom-initialization-of-Marvell-PHY-on-Bil.patch file://0013-amd-xgbe-fix-to-Custom-initialization-of-Marvell-PHY.patch file://0014-amd-xgbe-Start-AN-with-KR-training-auto-start.patch file://0015-amd-xgbe-AN-force-modeset-to-10GKR-for-resetting-HW.patch file://0018-amd-xgbe-WA-patch-to-fix-the-AN-issue.patch file://0019-amd-xgbe-register-has-to-read-twice-to-get-correct-v.patch file://0020-amd-xgbe-v2-add-support-for-ethernet-LEDs.patch file://0021-amd-xgbe-Work-around-patch-for-10G-BCM-link-stabilit.patch file://0022-amd-xgbe-V2-extend-driver-functionality-to-support-1.patch file://0023-mmc-sdhci-acpi-eMMC-5.0-host-controller-fix-for-AMD-.patch file://0024-Bilby-dummy-codec.patch file://amdgpu.cfg file://cpuinfo.cfg file://spi.cfg file://cxl.cfg file://AE4DMA.cfg"
+SRC_URI = "${KERNELURI};${SRCBRANCHARG} ${YOCTO_META} file://ntb.cfg file://ntb_netdev.cfg file://ntb_perf.cfg file://NVME-Core.cfg file://dmatest.cfg file://nvme.cfg file://ntbtool.cfg file://0002-net-phy-aquantia-Add-10mbps-support.patch file://0009-net-phy-Broadcom-Added-support-for-BCM84892-PHY-devi.patch file://0011-amd-xgbe-need-to-check-KR-training-before-restart-CL.patch file://0012-amd-xgbe-Custom-initialization-of-Marvell-PHY-on-Bil.patch file://0013-amd-xgbe-fix-to-Custom-initialization-of-Marvell-PHY.patch file://0014-amd-xgbe-Start-AN-with-KR-training-auto-start.patch file://0015-amd-xgbe-AN-force-modeset-to-10GKR-for-resetting-HW.patch file://0018-amd-xgbe-WA-patch-to-fix-the-AN-issue.patch file://0019-amd-xgbe-register-has-to-read-twice-to-get-correct-v.patch file://0020-amd-xgbe-v2-add-support-for-ethernet-LEDs.patch file://0021-amd-xgbe-Work-around-patch-for-10G-BCM-link-stabilit.patch file://0022-amd-xgbe-V2-extend-driver-functionality-to-support-1.patch file://0023-mmc-sdhci-acpi-eMMC-5.0-host-controller-fix-for-AMD-.patch file://0024-Bilby-dummy-codec.patch file://amdgpu.cfg file://cpuinfo.cfg file://spi.cfg file://cxl.cfg file://AE4DMA.cfg"
 
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
@@ -122,9 +122,9 @@ KERNEL_DEVICETREE:qemuarmv5 = "versatile-pb.dtb"
 #COMPATIBLE_MACHINE = "^(qemuarm|qemuarmv5|qemuarm64|qemux86|qemuppc|qemuppc64|qemumips|qemumips64|qemux86-64|qemuriscv64|qemuriscv32)$"
 KBRANCH = "linux-6.6.y"
 
-SRCREV_machine = "ac25535242acb0d0042b920e5232b10e76ad169b"
+SRCREV_machine = "5e9df83a705290c4d974693097df1da9cbe25854"
 
-LINUX_VERSION = "6.6.7"
+LINUX_VERSION = "6.6.9"
 
 
 KMACHINE = "common-pc-64"

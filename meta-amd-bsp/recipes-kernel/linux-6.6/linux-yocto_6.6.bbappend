@@ -1,11 +1,8 @@
 require linux-yocto-6.6.inc
 
-
 PR := "${INC_PR}.0"
 
-
-
-SRCREV_machine = "ac25535242acb0d0042b920e5232b10e76ad169b"
+SRCREV_machine = "5e9df83a705290c4d974693097df1da9cbe25854"
 
 inherit kernel
 
@@ -22,28 +19,28 @@ do_install() {
 oe_runmake INSTALL_MOD_PATH=${D}/ modules_install
 
 
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/Module.symvers
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.builtin.alias.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.symbols
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.softdep
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.dep.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.alias
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.alias.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.devname
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.symbols.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.dep
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.builtin.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/Module.symvers
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.builtin.alias.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.symbols
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.softdep
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.dep.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.alias
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.alias.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.devname
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.symbols.bin
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.dep
-  rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.builtin.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/Module.symvers
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.builtin.alias.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.symbols
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.softdep
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.dep.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.alias
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.alias.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.devname
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.symbols.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.dep
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}/modules.builtin.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/Module.symvers
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.builtin.alias.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.symbols
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.softdep
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.dep.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.alias
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.alias.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.devname
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.symbols.bin
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.dep
+rm -rf ${D}/lib/modules/${KERNEL_VERSION}+/modules.builtin.bin
 
 }
 

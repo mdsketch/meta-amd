@@ -13,6 +13,9 @@ cd "${REPO_DIR}"
 git clone --single-branch --branch "${YOCTO_BRANCH}" "git://git.openembedded.org/meta-openembedded"
 git clone --single-branch --branch "${YOCTO_BRANCH}" "git://git.yoctoproject.org/meta-dpdk"
 
+#clone meta-virtualization for enable virtualization or libvirt
+git clone https://git.yoctoproject.org/meta-virtualization -b kirkstone
+
 # Clone meta-amd repository using SSH
 git clone "ssh://gerritgit/eesc/ec/ese/meta-amd"
 

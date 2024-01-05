@@ -21,6 +21,8 @@ bitbake-layers add-layer ../meta-openembedded/meta-networking
 bitbake-layers add-layer ../meta-dpdk
 bitbake-layers add-layer ../meta-amd/meta-amd-distro
 bitbake-layers add-layer ../meta-amd/meta-amd-bsp
+bitbake-layers add-layer ../meta-openembedded/meta-filesystems
+bitbake-layers add-layer ../meta-virtualization
 
 # Build the core-image-sato target
 bitbake core-image-sato -k

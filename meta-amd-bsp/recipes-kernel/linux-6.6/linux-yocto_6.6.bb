@@ -13,7 +13,7 @@ SRC_URI = "git://git.yoctoproject.org/linux-yocto.git;name=machine;branch=linux-
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-5.15;destsuffix=${KMETA}"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "6.6.7"
+LINUX_VERSION ?= "6.6.9"
 
 
 KMETA = "kernel-meta"
@@ -21,7 +21,7 @@ KCONF_BSP_AUDIT_LEVEL = "1"
 
 KERNEL_DEVICETREE:qemuarmv5 = "versatile-pb.dtb"
 
-PV = "6.6.7"
+PV = "6.6.9"
 
 KERNEL_VERSION_SANITY_SKIP = "1"
 

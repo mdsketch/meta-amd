@@ -1,17 +1,14 @@
-IMAGE_INSTALL:append= "linux-firmware"
-IMAGE_INSTALL:append= " nvme-cli"
-
 CORE_IMAGE_EXTRA_INSTALL += " kernel-modules"
-IMAGE_INSTALL:append = " kernel-modules"
 
-# In your image recipe (.bb file)
-CORE_IMAGE_EXTRA_INSTALL += " kernel-modules"
 
 # Optionally, you can specify the specific kernel-modules package
-IMAGE_INSTALL:append = " kernel-modules"
+IMAGE_INSTALL:append = " kernel-modules nvme-cli kernel-module-ntb  spitools linux-firmware"
+IMAGE_INSTALL:append = " spidev-test"
+#KERNEL_MODULE_AUTOLOAD += "spidev"
+KERNEL_MODULE_AUTOLOAD += "ntb_netdev"
+
 
 inherit core-image
-
 
 # Conditionally add packages for Siena
 do_siena[prefunc] = "siena_prefunc"
@@ -31,4 +28,5 @@ v1000_prefunc() {
     fi
 }
 
-
+DEPENDS += "lib64-setup"
+IMAGE_INSTALL:append = " lib64-setup"
