@@ -3,7 +3,7 @@ CORE_IMAGE_EXTRA_INSTALL += " kernel-modules"
 
 # Optionally, you can specify the specific kernel-modules package
 IMAGE_INSTALL:append = " kernel-modules nvme-cli kernel-module-ntb  spitools linux-firmware"
-IMAGE_INSTALL:append = " spidev-test"
+IMAGE_INSTALL:append = " spidev-test rpm opkg"
 #KERNEL_MODULE_AUTOLOAD += "spidev"
 KERNEL_MODULE_AUTOLOAD += "ntb_netdev"
 
