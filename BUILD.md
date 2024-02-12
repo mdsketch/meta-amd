@@ -42,6 +42,8 @@ bitbake-layers add-layer ../meta-openembedded/meta-networking
 bitbake-layers add-layer ../meta-dpdk
 bitbake-layers add-layer ../meta-amd/meta-amd-distro
 bitbake-layers add-layer ../meta-amd/meta-amd-bsp
+bitbake-layers add-layer ../meta-openembedded/meta-filesystems
+bitbake-layers add-layer ../meta-virtualization
 ```
 
 ### 2.3. Start the build
@@ -64,3 +66,4 @@ the newly built image.
 You can also customize the image ([CUSTOMIZE.md](CUSTOMIZE.md)) by
 enabling/disabling certain configurable features in the `local.conf`.
 Make sure to re-build the image before deploying the customized build.
+
